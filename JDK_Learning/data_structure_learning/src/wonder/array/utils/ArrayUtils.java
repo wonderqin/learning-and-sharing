@@ -13,7 +13,7 @@ public class ArrayUtils {
 
     private Exception IsNotTheSameInstance;
 
-    /*
+    /**
      * @Author wonderqin
      * @Description adjust the array if is full
      * @Date

@@ -5,19 +5,18 @@ import wonder.array.utils.ArrayUtils;
 
 import java.util.Date;
 import java.util.logging.Logger;
-
+/**
+ * @Author wonderqin
+ * @Description TODO
+ * @Date
+ * @Param
+ * @return
+**/
 public class ArrayOperation {
     private static Logger logger = Logger.getLogger(ArrayOperation.class.getName());
-    ArrayUtils ArrayUtils;
-    private Object Exception;
+    ArrayUtils arrayUtils;
+    private Object exception;
 
-    /*
-     * @Author wonderqin
-     * @Description //init
-     * @Date
-     * @Param
-     * @return
-    **/
     public Object[] initArray(int arrayLenth){
         return new Object[arrayLenth];
     }
@@ -35,9 +34,9 @@ public class ArrayOperation {
             logger.info("the location of insertion is illegal.");
         }
 
-        Object[] newArray = ArrayUtils.copyArray(array);
+        Object[] newArray = arrayUtils.copyArray(array);
         //if the array is full, extend its capacity
-        if(ArrayUtils.isFull(array)){
+        if(arrayUtils.isFull(array)){
             newArray[newArray.length -1] = array[insertLoc];
             newArray[insertLoc] = input;
         }
