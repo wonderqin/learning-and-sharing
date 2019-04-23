@@ -39,15 +39,16 @@ public class ArrayStack {
     /**
      * @Author wonderqin
      * @Description 若栈为空，返回空；否则返回栈顶元素
-     * @Date
-     * @Param
-     * @Return
+     * @Date 21:25 2019-04-15
+     * @Param []
+     * @Return java.lang.String
     **/
+    
     public String pop(){
         /**栈空**/
         if(count == 0){return null;}
         String tmp = items[count - 1];
-        /**其实源码中还有removeElementAt(len - 1);方法用以删除栈顶元素**/
+        /**其实源码中还有removeElementAt(len - 1)方法用以删除栈顶元素**/
         --count;
         return tmp;
     }
@@ -58,7 +59,7 @@ public class ArrayStack {
      * @Param item
      * @Return boolean
     **/
-    public String popop(){
+    public String popEmpty(){
         //栈空
         if(count == 0){return null;}
         count--;
