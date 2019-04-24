@@ -57,8 +57,8 @@ public class BubbleSort {
     public void bubbleSortThree(int[] a){
         int i, j;
         /**初始化flag为false**/
-        boolean flag;
-        for(i = 0; i < a.length; i++){
+        boolean flag = true;
+        for(i = 0; i < a.length && flag; i++){
             flag = false;
             for(j = a.length - 2; j >= i; j--){
                 if(a[j] > a[j + 1]){
